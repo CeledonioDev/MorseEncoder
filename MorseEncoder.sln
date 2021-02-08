@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorseEncoderLib", "MorseEncoderLib\MorseEncoderLib.csproj", "{1F05CBA8-8FA8-4800-8749-AF0CBFD8DAC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorseEncoderLib.Tests", "MorseEncoderLib.Tests\MorseEncoderLib.Tests.csproj", "{EBF7477B-D265-49DA-BDAE-0D34CF535E36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F05CBA8-8FA8-4800-8749-AF0CBFD8DAC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F05CBA8-8FA8-4800-8749-AF0CBFD8DAC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F05CBA8-8FA8-4800-8749-AF0CBFD8DAC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F05CBA8-8FA8-4800-8749-AF0CBFD8DAC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBF7477B-D265-49DA-BDAE-0D34CF535E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBF7477B-D265-49DA-BDAE-0D34CF535E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBF7477B-D265-49DA-BDAE-0D34CF535E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBF7477B-D265-49DA-BDAE-0D34CF535E36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {707A2B71-1A63-4B93-AE20-DB3BB9EDE444}
+	EndGlobalSection
+EndGlobal
