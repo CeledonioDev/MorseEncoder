@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace MorseEncoderFacts
 {
     public class MorseEncoder
     {
+        private static readonly Regex InvalidVowelsRegex = new Regex("áéíóú", RegexOptions.IgnoreCase);
+
         /// <summary>
         /// Encode the input message
         /// </summary>
@@ -186,7 +189,7 @@ namespace MorseEncoderFacts
                 throw new ArgumentOutOfRangeException(message);
             }
 
-            if (message.Contains("é"))
+            if (InvalidVowelsRegex.IsMatch(message))
             {
                 throw new FormatException();
             }

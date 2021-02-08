@@ -1,4 +1,5 @@
 using MorseEncoderFacts;
+using MorseEncoderLib.Tests;
 using NUnit.Framework;
 using System;
 
@@ -42,7 +43,7 @@ namespace MorseEncoderTest
         [TestCase("7", "--...")]
         [TestCase("8", "---..")]
         [TestCase("9", "----.")]
-        public void Encodes_Consonants(string message, string expected)
+        public void Encodes_Digits(string message, string expected)
         {
             MorseEncoder encode = new MorseEncoder();
 
@@ -73,11 +74,22 @@ namespace MorseEncoderTest
             Assert.That(() => encode.Encode(string.Empty), Throws.InstanceOf<ArgumentOutOfRangeException>());
         }
 
-        [Test]
-        public void With_E_Accute_Throws_FormatException()
+        [TestCaseSource(typeof(MorseEncoderTestData), nameof(MorseEncoderTestData.DigitTestCases))]
+        public string Encodes_Digits2(string message)
         {
             MorseEncoder encode = new MorseEncoder();
-            Assert.That(() => encode.Encode("é"), Throws.InstanceOf<FormatException>());
+
+            return encode.Encode(message);
+        }
+
+        [TestCaseSource(typeof(MorseEncoderTestData), nameof(MorseEncoderTestData.DigitTestCasesVoid))]
+        public void Encodes_Digits3(string message, string expected)
+        {
+            MorseEncoder encode = new MorseEncoder();
+
+            string actual = encode.Encode(message);
+
+            Assert.That(actual, Is.EqualTo(expected));
         }
     }
 }
