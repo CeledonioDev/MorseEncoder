@@ -116,7 +116,7 @@ namespace MorseEncoderFacts
             }
             if (message.Contains("K"))
             {
-                return "-.-";
+                return ".-.";
             }
             if (message.Contains("L"))
             {
