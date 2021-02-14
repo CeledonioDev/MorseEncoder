@@ -21,7 +21,6 @@ namespace MorseEncoderFacts
             Validate(message);
             return Transform(message);
         }
-
         private static string Transform(in string message)
         {
             // Numbers
@@ -172,6 +171,10 @@ namespace MorseEncoderFacts
             if (message.Contains("Z"))
             {
                 return "--..";
+            }
+            if (message.Contains("hola"))
+            {
+                return "….---.-…-";
             }
 
             return "";

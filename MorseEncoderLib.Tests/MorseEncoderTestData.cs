@@ -28,5 +28,19 @@ namespace MorseEncoderLib.Tests
                 yield return new TestCaseData("1",".----");
             }
         }
+
+        public static IEnumerable<TestCaseParameters> FileTestCasesVoid
+        {
+            get
+            {
+                yield return new TestCaseData("hola", "....---.-...-");
+                yield return new TestCaseData("sos", "...---.....");
+            }
+        }
+
+        private static TestCaseParameters[] PhrasesCode =
+        {
+
+        };
     }
 }
